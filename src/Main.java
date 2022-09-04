@@ -18,12 +18,5 @@ public class Main {
         Collections.sort(sortedList);
         System.out.println(sortedList);
 
-        List<Integer> sortedList2 = intList.stream()
-                .filter(x->x>0)
-                .filter(x -> x%2==0)
-                .sorted(Comparator.naturalOrder())
-                .collect(Collectors.toList());
-
-        System.out.println(sortedList2);
     }
 }
